@@ -52,6 +52,8 @@ class MainActivity : AppCompatActivity() {
             mainImg.distortion()
         } else if (view.id == R.id.main_with_line) {
             mainImg.addLines()
+        } else if (view.id == R.id.bin) {
+            mainImg.bin()
         } else if (view.id == R.id.main_save) {
             if (tmpUri == null) {
                 Toast.makeText(this, "还没打开图片", Toast.LENGTH_SHORT).show()
